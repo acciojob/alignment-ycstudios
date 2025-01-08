@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>HTML Assignment #3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Assignment</title>
     <style>
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            border: 1px solid black;
+            border-spacing: 1px;
+            padding: 1px;
         }
 
         td {
             border: 1px solid black;
+            padding: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
         }
 
         .green {
@@ -32,60 +46,90 @@
     </style>
 </head>
 <body>
-    <h1>HTML Assignment #3</h1>
+    <h1>HTML Assignment</h1>
 
-    <!-- First Table -->
-    <table class="table-1" id="table-1">
+    <!-- Table 1 -->
+    <table id="table-1">
         <tr>
-            <td>left</td>
-            <td style="text-align: center;">center</td>
-            <td style="text-align: right;">right</td>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
         </tr>
         <tr>
-            <td>left</td>
-            <td style="text-align: center;">center</td>
-            <td style="text-align: right;">right</td>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
         </tr>
         <tr>
-            <td>left</td>
-            <td style="text-align: center;">center</td>
-            <td style="text-align: right;">right</td>
+            <td id="t11">left</td>
+            <td id="t12" class="center">center</td>
+            <td id="t13" class="right">right</td>
         </tr>
     </table>
 
-    <!-- Second Table -->
-    <table class="table-2" id="table-2">
+    <!-- Table 2 -->
+    <table id="table-2">
         <tr>
-            <td colspan="3" rowspan="2" style="width: 33.33%;"></td>
-            <td colspan="3" rowspan="2" style="width: 33.33%;"></td>
-        </tr>
-        <tr></tr>
-        <tr>
-            <td colspan="6" style="height: 20px;"></td>
+            <td id="t21" colspan="6" style="height: 20px;"></td>
         </tr>
         <tr>
-            <td style="height: 20px;"></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
             <td></td>
         </tr>
-        <!-- Green row -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- Table 3 -->
+    <table id="table-3">
+        <!-- Green Row -->
         <tr class="green">
-            <td colspan="3" style="height: 40px;"></td>
+            <td colspan="6" style="height: 40px;"></td>
         </tr>
+
         <tr>
-            <td style="width: 50%; text-align: center;">
+            <td style="width: 50%; text-align: center;" id="t-image">
                 <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Basketball Dunk" width="300px">
             </td>
         </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <!-- Blue row -->
+
+        <!-- Blue Row -->
         <tr class="blue">
-            <td colspan="3" style="height: 40px;"></td>
+            <td colspan="6" style="height: 40px;"></td>
         </tr>
     </table>
 </body>
