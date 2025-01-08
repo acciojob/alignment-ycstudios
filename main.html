@@ -1,16 +1,94 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>HTML Assignment #3</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h1>HTML Assignment #3</h1>
 
+    <!-- First Table -->
+    <table>
+        <tr>
+            <td>left</td>
+            <td style="text-align: center;">center</td>
+            <td style="text-align: right;">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td style="text-align: center;">center</td>
+            <td style="text-align: right;">right</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td style="text-align: center;">center</td>
+            <td style="text-align: right;">right</td>
+        </tr>
+    </table>
+
+    <!-- Second Table -->
+    <table>
+        <tr>
+            <td colspan="3" rowspan="2" style="width: 33.33%;"></td>
+            <td colspan="3" rowspan="2" style="width: 33.33%;"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td colspan="6" style="height: 20px;"></td>
+        </tr>
+        <tr>
+            <td style="height: 20px;"></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- Third Table -->
+    <table>
+        <tr class="green">
+            <td colspan="3" style="height: 40px;"></td>
+        </tr>
+        <tr>
+            <td style="width: 50%; text-align: center;">
+                <img src="https://www2.d125.org/applied_arts/teched/courses/WEB/portfolios/2013_FallP3/Luthra%20Portfolio/images-1.jpeg" alt="Basketball Dunk" width="300px">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr class="blue">
+            <td colspan="3" style="height: 40px;"></td>
+        </tr>
+    </table>
 </body>
-
 </html>
